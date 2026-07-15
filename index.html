@@ -245,23 +245,24 @@
            <h4>Contact Us</h4> <span id="required">(*required)</span>
             <form>
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label>First Name<span class="required">*</span></label>
+                    <input id="first-name" type="text" autocomplete="name" aria-required="true">
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label>Last Name<span class="required">*</span></label>
+                    <input id="last-name" type="text" autocomplete="family-name" aria-required="true">
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label>Email<span class="required">*</span></label>
+                    <input id="email" type="email" autocomplete="email" aria-required="true">
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label>Phone<span class="required">*</span></label>
+                    <input id="phone" type="tel" autocomplete="tel" aria-required="true">
                 </div>
+                
                 <fieldset  id="preferred-contact">
-                <legend>Preferred Contact Method<span>*</span></legend>
+                <legend>Preferred Contact Method<span class="required">*</span></legend>
                     <div> 
                         <input type="radio" name="preferred-contact" value="email">
                         <label>Email</label>
@@ -291,7 +292,7 @@
                     </select>
                 </fieldset>
                 <fieldset id="travelTime">
-                    <legend>Travel Time<span>*</span></legend>
+                    <legend>Travel Time<span class="required">*</span></legend>
                     <select id="select-travel-time">
                         <option>Choose</option>
                         <option>Fall</option>
@@ -301,7 +302,7 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input type="submit" value="Submit" value="Submit">
+                <input type="submit" value="Submit">
             </form>
             
         </section>
