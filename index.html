@@ -98,12 +98,14 @@
                 Testimonials
 
                 <section>
-                    <!--Responsive Image for resolution switching
-                        images/miranda-blake-L.png" 
-                        images/miranda-blake-S.png 404w
-                        images/miranda-blake-M.png 920w
-                        images/miranda-blake-L.png 1280w
-                    -->
+                    <picture>
+                    
+                        <source media="(min-width: 440px)" srcset="images/miranda-blake-L.png">
+                        <source media="(min-width: 920px)" srcset="images/miranda-blake-M.png">
+                        <source media="(min-width: 1280px)" srcset="images/miranda-blake-L.png">
+                        <img src="images/miranda-blake-L.png" alt="Miranda Blake">
+                    </picture>
+
                         <div>
                         Miranda Blake
                         <dl>
